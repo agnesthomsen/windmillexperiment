@@ -2,23 +2,18 @@
 
 \usepackage{mystyle}
 
-\title{\textbf{IB Internal Assessment}\\\textbf{Physics SL}\\ \vspace{5cm}Measuring the efficiency of wind turbines}
-\author{\vspace{5cm}\\Agnes H\o y-Thomsen\\Candidate Number: 000115-0026\\Word Count: }
+\title{\textbf{IB Internal Assessment}\\\textbf{Physics SL}\\ Measuring the efficiency of wind turbines}
 
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-
-\fancyhead[L]{\tiny Agnes H\o y-Thomsen\\Physics SL\\Candidate Number: 000115-0026}
-\fancyfoot[C]{\thepage}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyfoot{}
+%
+%\fancyhead[L]{\tiny Agnes H\o y-Thomsen\\Physics SL\\Candidate Number: 000115-0026}
+%\fancyfoot[C]{\thepage}
 
 \begin{document}
 
 \maketitle
-\clearpage
-\vspace{5cm}
-\tableofcontents
-\newpage
 
 %AGNES: START WRITING HERE
 \section{Introduction} 
@@ -26,7 +21,7 @@
 Climate change has been a heavily debated issue the past couple of years, with increasing concern for the future of humanity.
 With the poles melting and sea levels rising as well as the ozone layer disappearing and the planet heating up, many species are now in danger of extinction.
 Sea levels is a problem I particularly worry about in my country, Denmark, which is surrounded by oceans, has a flat surface, and already struggles with sea slowly eroding the coast lines.
-With fossil fuels being \SI{87}{\percent} of the world's primary energy consumption, according to a study in 2012, it's clear that alternatives to fossil fuels are not very efficient.
+With fossil fuels being \SI{87}{\percent} of the world's primary energy consumption, according to a study in 2012, it's clear that alternatives to fossil fuels are not very efficient \cite{FossilFuels}.
 Besides this argument,  emission not only affects the environment, but also our health; we seem to care more about short-term profits than our and the next generations' health.
 Nuclear power is an alternative producing enormous amounts of energy, but the radiation released is highly dangerous and waste material has to be hidden deep ground or in mountains.
 
@@ -44,10 +39,10 @@ Where the temperature is higher, the air rises and creates low pressure.
 Places with cooler temperatures have denser air do not rise, therefore creating high pressure.
 The movement of air from high to low pressure is an example of convectional currents and creates wind.
 
-Albert Betz discovered the maximum theoretical output of a wind turbine being \SI{59,3}{\percent}, which is known as Betz's Coefficient.
+Albert Betz discovered the maximum theoretical output of a wind turbine being \SI{59,3}{\percent}, which is known as Betz's Coefficient \cite{Betz}.
 However, this is a theoretical output.
 It is estimated more realistically that a wind turbine, under Danish weather circumstances, only uses and converts an average of \SIrange{25}{30}{\percent} of the actual energy available to it throughout the year, yet modern turbines can use up to \SI{45}{\percent} of the wind on optimal days.
-However, due to around \SIrange{6}{10}{\percent} loss of energy in the gearbox and the generator, the realistic average of power is between \SIrange{22}{28}{\percent}.
+However, due to around \SIrange{6}{10}{\percent} loss of energy in the gearbox and the generator, the realistic average of power is between \SIrange{22}{28}{\percent} \cite{WindTurbineWorks}.
 
 \begin{equation}
   P = \frac{1}{2} \rho A \vec{v}^{\,3}
@@ -93,7 +88,7 @@ The blue line is stall-regulated and the red line is pitch-regulated.
 The graph shows that the blue line can take a bit more wind speed and produce maximum power, where as it then decreases with higher wind speeds.
 The red line reaches a maximum speed and stays constant instead of decreasing, which usually is desired rather than for it to decrease like the blue one.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{img/WindTurbine.pdf}
   \caption{Graph showing Power and Wind Speed with Stall and Pitch regulated blades.}
@@ -154,15 +149,15 @@ The wings are made of card and bent slightly for them to catch more wind.
 I tried wooden blades as well, but they were too heavy for this experiment and could not turn.
 It should be mentioned that were no safety issues involving this experiment.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=0.5\textwidth]{img/solder.png}
+  \includegraphics[width=0.5\textwidth]{img/solder.jpg}
   \caption{Soldering the wires to the DC motor.}
   \label{figure:soldering}
 \end{figure}
-\begin{figure}
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=0.5\textwidth]{img/turbine.png}
+  \includegraphics[width=0.25\textwidth]{img/turbine.jpg}
   \caption{My finished wind turbine.}
   \label{figure:MyWindTurbine}
 \end{figure}
@@ -172,9 +167,9 @@ A voltmeter and an ammeter were placed in circuit with the wire from the turbine
 For this experiment I measured 10 different distances from the fan to the turbine.
 This was to be able to regulate the speed of the wind in order to see if the power outcome changes dependent on wind speed.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=0.5\textwidth]{img/finalsetup.png}
+  \includegraphics[width=0.5\textwidth]{img/finalsetup.jpg}
   \caption{The final set up of the experiment.}
   \label{figure:FinalSetup}
 \end{figure}
@@ -183,9 +178,9 @@ For each distance I measured the average wind speed, since the app used for meas
 The distance was always measured from the edge of the blue box to the front of the feet of the turbine, which can be seen in the picture above.
 I plotted a graph to prove the relationship between the distance and the wind speed:
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-%\includegraphics[width=0.5\textwidth]{img/windvsdistance.png}
+\includegraphics[width=0.5\textwidth]{img/WindSpeedVsDistance.pdf}
 \caption{Graph of distance and wind speed}
 \label{figure:DistanceVsWindSpeed}
 \end{figure}
@@ -200,9 +195,9 @@ Both $V$ and $I$ were measured in \si{\milli\volt} and \si{\milli\ampere}.
 For this experiment there was a high risk of having a very large resistance somewhere within the circuit, also in the generator.
 However to prove Ohm's law that the resistance is constant if V and I increases proportionally, and to test if the resistance in my circuit was constant, I plotted a graph of current against voltage:
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-%\includegraphics[width=0.5\textwidth]{img/ohmslaw.png}
+\includegraphics[width=0.5\textwidth]{img/OhmsLaw.pdf}
 \caption{Voltage vs current showing a straight line}
 \label{figure:OhmsLaw}
 \end{figure}
@@ -217,7 +212,7 @@ The radius of the paper blade was measured to \SI{22,5}{\centi\metre}, which gav
 Then the temperature was measured to $24^o$C and put into a program\cite{AirDensityCalculator}, which calculated the air density; \SI{1,1889}{\kilo\gram\per\metre\cubed}.
 With all the variables, I calculated the input power for every different wind speed:
 
-\begin{table}
+\begin{table}[h]
   \centering
   \begin{tabular}{@{}cc@{}} \toprule
     Average wind speed (\si{\metre\per\second}) & Input power (\si{\watt}) \\ \midrule
@@ -237,9 +232,9 @@ With all the variables, I calculated the input power for every different wind sp
 
 The data is presented on the graph below:
 
-\begin{figure}
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=0.5\textwidth]{img/FinalPlot.pdf}
+  \includegraphics[width=0.5\textwidth]{img/PowerVsWind.pdf}
   \caption{Wind speed vs the output power.}
   \label{figure:final}
 \end{figure}
@@ -266,10 +261,21 @@ Then I had both input and output in order to calculate the efficiency for each w
 \end{equation}
 
 %
-Rounded off to 3sf the efficiency of the wind speed at 10 m/s is 0,00000253%
+Rounded off to 3sf the efficiency of the wind speed at 10 m/s is \SI{0,0000253}{\percent}
 The rest of the efficiency data is presented in the table below:
 
-\begin{table}
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cc@{}} \toprule
+Wind Speed (\si{\metre\per\second}) & Percentage Efficiency ($\times 10^{-5}$) \\ \midrule
+10.2 & 0.00 \\ 
+10.0 & 1.60 \\ 
+9.4  & 3.78 \\ 
+9.1  & 5.68 \\ 
+6.0  & 8.79 \\ 
+5.0  & 21.6 \\ 
+3.9  & 0.831 \\ \bottomrule
+\end{tabular}
 \end{table}
 
 From this table it can be seen that my experiment did not produce any power when the wind speed was at the maximum.
@@ -294,8 +300,12 @@ The voltmeter and ammeter also had uncertainties with .
 The temperature has an uncertainty of .
 The ruler measuring distance has an uncertainty of , since the construction of the turbine was not straight so the feet on the left side were closer to the fan.
 For the area of the blades calculated, the ruler has an uncertainty of  and  
-For the input power  
-I would argue that am error is that the turbine did not function, when the wind speed was the greatest, due to the blade being made of paper not being able to catch the wind.
+For the input power
+\begin{equation}
+	\frac{\Delta P}{\Delta P} = \frac{\Delta A}{A} + \frac{\Delta \rho}{\rho} + 3 \frac{\Delta v}{v}
+	\label{equation:PowerError}
+\end{equation}
+I would argue that an error is that the turbine did not function, when the wind speed was the greatest, due to the blade being made of paper not being able to catch the wind.
 
 \section{Conclusion and Evaluation}
 My findings of the efficiency of the wind turbine did not seem to fit with the generalised standards of a normal turbine, where a modern high tech turbine can have up to \SI{45}{\percent} efficiency.
@@ -325,7 +335,6 @@ Obviously, more trials for the experiment usually makes the data more accurate e
 %AGNES: DONT WRITE ANYTHING BELOW HERE
 
 \nocite{*}
-\newpage
 \bibliography{references}
 \bibliographystyle{unsrt}
 
@@ -346,7 +355,7 @@ Obviously, more trials for the experiment usually makes the data more accurate e
 %Replace the Graph.pdf with your own figure name. Ideally the figures should all be PDF files, but some other image formats also work.
 %The figures also have to be in the same folder as the .tex file.
 %You can make the picture bigger or smaller by changing the number 0.7 - The maximum size this should be is 1, the smallest size is 0
-%\begin{figure}
+%\begin{figure}[h]
 %  \centering
 %  \includegraphics[width=0.7\textwidth]{img/Graph.pdf}
 %  \caption{WRITE YOUR CAPTION FOR THE FIGURE HERE}
